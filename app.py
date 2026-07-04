@@ -203,6 +203,18 @@ st.markdown(
         display: none !important;
     }
 
+    /* ──  PC: hide the "200MB per file..." hint that leaks out on wide screens  ── */
+    div[data-testid="stFileUploadDropzone"] > div > div > small {
+        display: none !important;
+    }
+
+    /* ──  PC: force the upload button container to 100% width, no flexbox squeeze  ── */
+    div[data-testid="stFileUploader"] section {
+        width: 100% !important;
+        flex: 1 0 100% !important;
+        max-width: 100% !important;
+    }
+
     /* Dropzone — dark canvas with blue border */
     [data-testid="stFileUploadDropzone"] {
         border-radius: 0px !important;
@@ -622,25 +634,6 @@ Return a JSON object containing a single key "extracted_text" holding the comple
                 "3. Use a higher-resolution image for upload"
             )
 
-# ============================================================
-# 🏠 Empty State Guide — clean frame, single line only
-# ============================================================
-else:
-    st.markdown(
-        """
-    <div style="text-align:center;padding:2.5rem 1.5rem;
-                background:#0a0a0a;border-radius:0px;
-                border:2px solid #0000ff;margin-top:0.5rem;
-                box-shadow:4px 4px 0px #000080;">
-        <div style="font-family:'Courier New',monospace;font-size:2.5rem;margin-bottom:0.8rem;
-                    line-height:1;">📖</div>
-        <div style="font-family:'Courier New',monospace;color:#4a90d9;font-size:0.82rem;">
-            Upload or snap a page above.
-        </div>
-    </div>
-    """,
-        unsafe_allow_html=True,
-    )
 
 # ============================================================
 # 📱 Footer
