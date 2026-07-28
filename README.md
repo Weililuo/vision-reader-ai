@@ -9,7 +9,7 @@ VisionReader AI transforms novel text into breathtaking, hyper-accurate cinemati
 <img width="300" height="600" alt="Weixin Image_20260728164238_223_129" src="https://github.com/user-attachments/assets/11e3f3d4-b5a2-4e73-b96f-ddbb7d48e816" />
 
 ## ⚙️ Features
-* **Bilingual Pure OCR:** Extracts exact text from physical book pages (English & Chinese) using Google Gemini 2.5 Flash, strictly forbidding AI commentary.
+* **Bilingual OCR:** Extracts exact text from physical book pages (English & Chinese) using Google Gemini 2.5 Flash.
 * **Landscape-First Render Logic:** Utilizes a custom V8.5 Elite Composition Guard via Pollinations AI.
 * **Dynamic UI:** A heavily customized, cyberpunk-themed Streamlit interface.
 
