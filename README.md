@@ -6,7 +6,7 @@ VisionReader AI transforms novel text into breathtaking, hyper-accurate cinemati
 ## 🚀 Live Demo
 [Try VisionReader AI Here](https://vision-reader-ai.onrender.com/)
 
-<img width="300" height="600" alt="Weixin Image_20260728164238_223_129" src="https://github.com/user-attachments/assets/11e3f3d4-b5a2-4e73-b96f-ddbb7d48e816" />
+<img width="300" height="560" alt="Demo Preview" src="https://github.com/user-attachments/assets/358cd9bd-036c-4c05-a8e8-830dbbbcf2d3" />
 
 ## ⚙️ Features
 * **Bilingual OCR:** Extracts exact text from physical book pages (English & Chinese) using Google Gemini 2.5 Flash.
