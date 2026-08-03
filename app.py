@@ -14,14 +14,19 @@ from PIL import Image
 import json
 import io
 import hashlib
+import os
 
 # ============================================================
 # 🔐 Core Configuration
 # ============================================================
-if "GEMINI_API_KEY" in st.secrets:
-    GEMINI_API_KEY = str(st.secrets["GEMINI_API_KEY"]).strip()
-else:
-    GEMINI_API_KEY = ""
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not GEMINI_API_KEY:
+    try:
+        if "GEMINI_API_KEY" in st.secrets:
+            GEMINI_API_KEY = str(st.secrets["GEMINI_API_KEY"]).strip()
+    except Exception:
+        GEMINI_API_KEY = ""
 
 GEMINI_MODEL = "gemini-2.5-flash"
 
